@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 /* Andy Bell Css Reset */
+
 /* Box sizing rules */
+
 *,
 *::before,
 *::after {
@@ -9,6 +11,7 @@
 }
 
 /* Remove default margin */
+
 body,
 h1,
 h2,
@@ -23,17 +26,20 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
 /* Set core root defaults */
+
 html:focus-within {
   scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
+
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -41,11 +47,13 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
+
 img,
 picture {
   max-width: 100%;
@@ -53,6 +61,7 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
+
 input,
 button,
 textarea,
@@ -61,11 +70,11 @@ select {
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
   *,
   *::before,
   *::after {
@@ -80,6 +89,7 @@ select {
 /* random comment */
 
 /* Css variables */
+
 /* ### Primary
 
 - Soft blue: hsl(215, 51%, 70%)
@@ -92,19 +102,22 @@ select {
 - Very dark blue (line): hsl(215, 32%, 27%)
 - White: hsl(0, 0%, 100%) */
 
-body{
-    font-family: 'Outfit', sans-serif;
+body {
+  font-family: "Outfit", sans-serif;
+  /* added for github test */
 }
 
-p{
-    font-size: 18px;
+p {
+  font-size: 18px;
 }
 
 /* front end mentor styles */
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
