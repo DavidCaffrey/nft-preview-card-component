@@ -87,8 +87,13 @@ select {
 
 /* Custom Styles */
 
+/* CSS PROPERTIES */
+:root {
+  --main-bg-color: hsl(217, 54%, 11%);
+  --main-card-bg-color: hsl(216, 50%, 16%);
 
-/* Css variables */
+  --main-soft-blue:hsl(215, 51%, 70%);
+}
 
 /* ### Primary
 
@@ -104,8 +109,37 @@ select {
 
 body {
   font-family: "Outfit", sans-serif;
-  
+  background-color: var(--main-bg-color);
 }
+
+.container {
+  width: 350px;
+  height: 596px;
+  background-color: var(--main-card-bg-color);
+  margin: 200px auto;
+}
+
+.main-image-container{
+
+}
+
+.main-image{}
+
+.main-text-container{}
+.main-header{
+  color:hsl(0, 0%, 100%) ;
+}
+.main-text{
+  color: var(--main-soft-blue);
+}
+.sub-text-container{}
+.eth-icon{}
+.eth-price{}
+.clock-icon{}
+.time-remaining{}
+.profile-container{}
+.profile-image{}
+.profile-name{}
 
 p {
   font-size: 18px;

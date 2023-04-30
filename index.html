@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="main-image-container">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="picture of a prism cube"
+          class="main-image"
+        />
+      </section>
+      <section class="main-text-container">
+        <h1 class="main-header">Equilibrium #3429</h1>
+        <p class="main-text">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </section>
+      <section class="sub-text-container">
+        <img
+          src="images/icon-ethereum.svg"
+          alt="ethereum icon"
+          class="eth-icon"
+        />
+        <span class="eth-price">0.041 ETH</span>
+        <img src="images/icon-clock.svg" alt="clock icon" class="clock-icon" />
+        <span class="time-remaining">3 days left</span>
+      </section>
+      <section class="profile-container">
+        <img src="images/image-avatar.png" alt="" srcset=""  class="profile-image"/>
+       <p>Creation of <span class="profile-name">Jules Wyvern</span></p>  
+      </section>
+    </main>
 
- 
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">David Caffrey</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">David Caffrey</a>.
+    </footer>
+  </body>
 </html>
