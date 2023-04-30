@@ -91,8 +91,9 @@ select {
 :root {
   --main-bg-color: hsl(217, 54%, 11%);
   --main-card-bg-color: hsl(216, 50%, 16%);
-
+  --main-white:hsl(0, 0%, 100%);
   --main-soft-blue:hsl(215, 51%, 70%);
+  --main-cyan:hsl(178, 100%, 50%);
 }
 
 /* ### Primary
@@ -117,29 +118,67 @@ body {
   height: 596px;
   background-color: var(--main-card-bg-color);
   margin: 200px auto;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .main-image-container{
-
+  width: 100%;
+  margin: 0 auto;
 }
 
-.main-image{}
+.main-image{
+  border-radius: 10px;
+}
 
 .main-text-container{}
+
 .main-header{
-  color:hsl(0, 0%, 100%) ;
+  color:var(--main-white);
 }
 .main-text{
   color: var(--main-soft-blue);
 }
 .sub-text-container{}
-.eth-icon{}
-.eth-price{}
-.clock-icon{}
-.time-remaining{}
-.profile-container{}
-.profile-image{}
-.profile-name{}
+
+.eth-icon{
+  display: inline-block;
+}
+
+.eth-price{
+  color: var(--main-cyan);
+}
+.clock-icon{
+  display: inline-block;
+}
+
+.time-remaining{
+  color: var(--main-soft-blue);
+}
+.profile-container{
+  display: flex;
+}
+
+.profile-image{
+  width: 10%;
+  border: 2px solid var(--main-white);
+  border-radius: 50%;
+  /* display: inline-block; */
+}
+
+.profile-text{
+  color: var(--main-soft-blue);
+}
+
+.profile-name{
+  color: var(--main-white);
+}
+
+.footer-text{
+  color: var(--main-white);
+  font-size: 16px;
+}
+
 
 p {
   font-size: 18px;
