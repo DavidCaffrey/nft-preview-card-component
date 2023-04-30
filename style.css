@@ -94,100 +94,177 @@ select {
   --main-white:hsl(0, 0%, 100%);
   --main-soft-blue:hsl(215, 51%, 70%);
   --main-cyan:hsl(178, 100%, 50%);
+  --main-dark-blue:hsl(215, 32%, 27%);
 }
 
-/* ### Primary
+html{
+  font-size: 62.5%;
+}
 
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
-
-### Neutral
-
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%) */
 
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--main-bg-color);
+
 }
 
 .container {
-  width: 350px;
-  height: 596px;
+  width: 35rem;
+  height: 50rem;
   background-color: var(--main-card-bg-color);
-  margin: 200px auto;
+  margin: 13rem auto;
   border-radius: 10px;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .main-image-container{
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 1.25rem auto;
+  transition: all 0.3s;
+  position: relative;
 }
+
+.main-image-container:hover .cyan-tint{
+  transform:scale(1);
+  cursor: pointer;
+}
+
+.cyan-tint{
+  
+  background-color: rgba(0, 255, 247, 0.704);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: scale(0);
+  transition: all 0.1s ease-in-out;
+  backdrop-filter: blur(0.5px) brightness(100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: .75rem auto .75rem auto;
+}
+
+.eye-icon{
+  font-size: 4rem;
+  color: var(--main-white);
+  
+}
+
 
 .main-image{
   border-radius: 10px;
+  width: 90%;
+  margin: .75rem auto .75rem auto;
 }
 
-.main-text-container{}
+
+.main-text-container{
+  margin-bottom: 1.25rem;
+}
 
 .main-header{
   color:var(--main-white);
+  margin-bottom: 1.25rem;
+  transition: all 0.3s;
+  font-size: 2.5rem;
 }
+
+.main-header:hover{
+  color:var(--main-cyan);
+  cursor: pointer;
+}
+
 .main-text{
   color: var(--main-soft-blue);
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
 }
-.sub-text-container{}
+.sub-text-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth-container{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  
+}
 
 .eth-icon{
   display: inline-block;
+  width: 2rem;
 }
 
 .eth-price{
   color: var(--main-cyan);
+  
 }
+
+.time-container{
+  display: flex;
+  width: 35%;
+  gap: 5%;
+}
+
 .clock-icon{
   display: inline-block;
+  
 }
 
 .time-remaining{
   color: var(--main-soft-blue);
+}
+
+.divider{
+  color: var(--main-dark-blue);
+  margin: 1.25rem 0 .75rem 0;
 }
 .profile-container{
   display: flex;
 }
 
 .profile-image{
-  width: 10%;
+  width: 11%;
   border: 2px solid var(--main-white);
   border-radius: 50%;
-  /* display: inline-block; */
+  margin-right: .75rem;
+  margin-top: 0.3rem;
 }
 
 .profile-text{
   color: var(--main-soft-blue);
+  margin-top: 0.3rem;
 }
 
 .profile-name{
   color: var(--main-white);
+  transition: all 0.3s;
+}
+
+.profile-name:hover{
+  cursor: pointer;
+  color: var(--main-cyan);
 }
 
 .footer-text{
   color: var(--main-white);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 
 p {
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 /* front end mentor styles */
 
 .attribution {
-  font-size: 11px;
+  font-size: .6rem;
   text-align: center;
 }
 
