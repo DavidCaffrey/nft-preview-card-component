@@ -110,11 +110,11 @@ body {
 
 .container {
   width: 35rem;
-  height: 50rem;
+  height: 60rem;
   background-color: var(--main-card-bg-color);
   margin: 13rem auto;
   border-radius: 10px;
-  padding: 1.25rem;
+  padding: 2.3rem;
 }
 
 .main-image-container{
@@ -144,8 +144,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  margin: .75rem auto .75rem auto;
+  width: 100%;
+ 
 }
 
 .eye-icon{
@@ -157,8 +157,8 @@ body {
 
 .main-image{
   border-radius: 10px;
-  width: 90%;
-  margin: .75rem auto .75rem auto;
+  width: 100%;
+  
 }
 
 
@@ -192,16 +192,17 @@ body {
   display: flex;
   width: 30%;
   justify-content: space-between;
-  
+  align-items: center;
 }
 
 .eth-icon{
   display: inline-block;
-  width: 2rem;
+  width: 16px;
 }
 
 .eth-price{
   color: var(--main-cyan);
+  font-size: 1.5rem;
   
 }
 
@@ -209,6 +210,7 @@ body {
   display: flex;
   width: 35%;
   gap: 5%;
+  align-items: center;
 }
 
 .clock-icon{
@@ -218,27 +220,31 @@ body {
 
 .time-remaining{
   color: var(--main-soft-blue);
+  font-size: 1.5rem;
 }
 
 .divider{
   color: var(--main-dark-blue);
-  margin: 1.25rem 0 .75rem 0;
+  margin: 1.25rem 0 2.25rem 0;
 }
 .profile-container{
   display: flex;
+ 
+  
 }
 
 .profile-image{
   width: 11%;
   border: 2px solid var(--main-white);
   border-radius: 50%;
-  margin-right: .75rem;
-  margin-top: 0.3rem;
+
 }
 
 .profile-text{
   color: var(--main-soft-blue);
-  margin-top: 0.3rem;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-top: .5rem;
 }
 
 .profile-name{
