@@ -105,6 +105,11 @@ html{
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--main-bg-color);
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -112,7 +117,6 @@ body {
   width: 35rem;
   height: 60rem;
   background-color: var(--main-card-bg-color);
-  margin: 13rem auto;
   border-radius: 10px;
   padding: 2.3rem;
 }
@@ -120,7 +124,7 @@ body {
 .main-image-container{
   width: 100%;
   margin: 0 auto 1.25rem auto;
-  transition: all 0.3s;
+  transition: 3s;
   position: relative;
 }
 
@@ -138,7 +142,7 @@ body {
   bottom: 0;
   right: 0;
   transform: scale(0);
-  transition: all 0.1s ease-in-out;
+  transition: 3s ease-in-out;
   backdrop-filter: blur(0.5px) brightness(100%);
   border-radius: 10px;
   display: flex;
@@ -176,6 +180,7 @@ body {
 .main-header:hover{
   color:var(--main-cyan);
   cursor: pointer;
+  transition: 3s;
 }
 
 .main-text{
@@ -263,14 +268,11 @@ body {
 }
 
 
-p {
-  font-size: 1.1rem;
-}
 
 /* front end mentor styles */
 
 .attribution {
-  font-size: .6rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
